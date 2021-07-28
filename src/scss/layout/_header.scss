@@ -1,16 +1,35 @@
-.header__container {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0;
+.header {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #ffffff;
 
-  background-color: #0271bc;
+  &__menu {
+    display: flex;
+    position: fixed;
+    background-color: #0271bc;
+    width: 44px;
+    height: 44px;
+
+    &--item {
+      display: block;
+      padding: 15px 14px 15px 14px;
+    }
+  }
 }
-
-.header__menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
+.header__title--container {
+  padding: 284px 15px 143px 15px;
+}
+.header__title--main {
+  font-family: $font-family;
+  font-size: $header-titlefs;
+  text-transform: uppercase;
+}
+.header--title--small {
+  font-size: $font-family;
+  font-size: $header-textfs;
 }
