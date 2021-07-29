@@ -1,0 +1,13 @@
+.main__reason--container {
+  display: grid;
+  padding: 30px 15px 60px 15px;
+  background-color: $fondo-main;
+  font-family: $font-family;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.main__reason--title {
+  width: 290px;
+  height: 30px;
+  text-transform: capitalize;
+}
