@@ -10,38 +10,31 @@
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
-}
-.reason__container--title {
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: capitalize;
-  justify-content: center;
-  grid-row: 1;
-  grid-column: 1/4;
-}
-.reason__container--reason--1 {
-  grid-row: 2;
-  grid-column: 2;
-}
-.reason__container--reason--2 {
-  grid-row: 3;
-  grid-column: 2;
-}
-.reason__container--reason--3 {
-  grid-row: 4;
-  grid-column: 2;
+
+  &--title {
+    font-size: $main-titlefs;
+    font-weight: $font-wbold;
+    text-transform: capitalize;
+    justify-content: center;
+    grid-row: 1;
+    grid-column: 1/4;
+  }
+  &--reason--1 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  &--reason--2 {
+    grid-row: 3;
+    grid-column: 2;
+  }
+  &--reason--3 {
+    grid-row: 4;
+    grid-column: 2;
+  }
 }
 .reason__button {
   grid-row: 5;
   grid-column: 2;
-}
-.reason__subtitle {
-  font-size: 18px;
-  font-weight: bold;
-}
-.reason__text {
-  font-size: 18px;
-  margin-bottom: 45px;
 }
 .reason__button {
   width: 184px;
@@ -50,9 +43,18 @@
   background-color: $main-buttoncolor;
   padding: 10px 29px 0 29px;
   align-items: center;
+
+  &--link {
+    color: $header-titlebigcolor;
+    text-decoration: none;
+    font-size: $main-buttonfs;
+  }
 }
-.reason__button--link {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
+.reason__subtitle {
+  font-size: $main-articlefs;
+  font-weight: $main-articlefs;
+}
+.reason__text {
+  font-size: $main-articlefs;
+  margin-bottom: 45px;
 }

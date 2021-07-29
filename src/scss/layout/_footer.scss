@@ -1,57 +1,62 @@
 .footer__container {
   background-color: $fondo-footer;
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-bottom: 45px;
-  color: white;
+  color: $header-titlebigcolor;
   line-height: 30px;
 }
 .footer__button {
   width: 45px;
   height: 45px;
   border-radius: 22px;
-  background-color: white;
+  background-color: $header-titlebigcolor;
   transform: translateY(-25px);
   justify-content: center;
-}
-.footer__button--up {
-  margin: 10px 12px 10px 12px;
+
+  &--up {
+    margin: 10px 12px 10px 12px;
+  }
 }
 .footer__container--links {
   margin: 0 123px 30px 123px;
   font-family: $font-family;
-  color: white;
+  color: $header-titlebigcolor;
   list-style-type: none;
+
+  &--style {
+    text-decoration: none;
+    color: $header-titlebigcolor;
+    font-size: $footer-linksfs;
+    text-transform: uppercase;
+  }
 }
-.footer__container--link--style {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  text-transform: uppercase;
-}
+
 .footer__container--socials {
   margin: 0 90px 30px 90px;
   list-style-type: none;
   font-family: $font-family;
-}
-.footer__container--socials--style {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  text-transform: uppercase;
+
+  &--style {
+    text-decoration: none;
+    color: $header-titlebigcolor;
+    font-size: $footer-socialsfs;
+    text-transform: uppercase;
+  }
 }
 .footer__copy {
   margin-bottom: 45px;
-  font-size: 14px;
+  font-size: $claim-title2fs;
   font-family: $font-family;
-}
-.footer__copy--text {
-  display: flex;
-  justify-content: center;
+
+  &--text {
+    display: flex;
+    justify-content: center;
+  }
 }
 .heart {
   color: $main-buttoncolor;

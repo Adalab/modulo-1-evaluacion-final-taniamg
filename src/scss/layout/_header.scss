@@ -10,7 +10,7 @@
   width: 100%;
   height: 100vh;
   font-family: $font-family;
-  color: #ffffff;
+  color: $header-titlebigcolor;
 
   &__menu {
     display: flex;
@@ -45,11 +45,12 @@
   width: 45px;
   height: 45px;
   border-radius: 23px;
-  background-color: white;
+  background-color: $header-titlebigcolor;
   // border: 0 137px 53px 138px;
-}
-.header__button--down {
-  width: 20px;
-  height: 11px;
-  margin: 17px 12px 15px 12px;
+
+  &--down {
+    width: 20px;
+    height: 11px;
+    margin: 17px 12px 15px 12px;
+  }
 }

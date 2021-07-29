@@ -5,12 +5,7 @@
   padding: 30px 15px 45px;
   font-family: $font-family;
 }
-.claim__title--2 {
-  width: 90px;
-  height: 30px;
-  font-size: $claim-title2fs;
-  color: $claim-smalltxtcolor;
-}
+
 .claim__title--container {
   width: 290px;
   height: auto;
@@ -21,6 +16,13 @@
   text-transform: capitalize;
   line-height: 1.25;
   height: 60px;
+
+  &--2 {
+    width: 90px;
+    height: 30px;
+    font-size: $claim-title2fs;
+    color: $claim-smalltxtcolor;
+  }
 }
 .claim__text {
   width: 290px;
@@ -38,10 +40,11 @@
   text-transform: capitalize;
   font-weight: $font-wbold;
   padding: 10px 25px 0 26px;
-}
-.claim__botton--text {
-  display: flex;
-  width: 25px;
-  height: 45px;
-  text-align: center;
+
+  &--text {
+    display: flex;
+    width: 25px;
+    height: 45px;
+    text-align: center;
+  }
 }
