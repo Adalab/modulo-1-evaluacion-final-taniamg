@@ -6,12 +6,13 @@
   width: 100vw;
   height: 100vh;
   text-align: center;
+  font-family: $font-family;
   color: #ffffff;
 
   &__menu {
     display: flex;
     position: fixed;
-    background-color: #0271bc;
+    background-color: $menu-iconcolor;
     width: 44px;
     height: 44px;
 
@@ -22,14 +23,28 @@
   }
 }
 .header__title--container {
-  padding: 284px 15px 143px 15px;
+  padding: 284px 15px 45px 15px;
 }
+
 .header__title--main {
-  font-family: $font-family;
   font-size: $header-titlefs;
   text-transform: uppercase;
 }
-.header--title--small {
-  font-size: $font-family;
+.header__title--small {
   font-size: $header-textfs;
+  padding-top: 10px;
+}
+
+.header__button {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 23px;
+  background-color: white;
+  // border: 0 137px 53px 138px;
+}
+.header__button--down {
+  width: 20px;
+  height: 11px;
+  margin: 17px 12px 15px 12px;
 }
