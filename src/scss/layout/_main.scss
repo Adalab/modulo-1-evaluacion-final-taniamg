@@ -7,6 +7,7 @@
   background-color: $fondo-main;
   font-family: $font-family;
   text-align: center;
+  align-items: center;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -14,8 +15,10 @@
   font-size: 24px;
   font-weight: bold;
   text-transform: capitalize;
+  justify-content: center;
   grid-row: 1;
-  grid-column: 1/3;
+  grid-column: 1/4;
+  margin-left: 15px;
 }
 .reason__container--reason--1 {
   grid-row: 2;
@@ -32,4 +35,12 @@
 .reason__button {
   grid-row: 5;
   grid-column: 2;
+}
+.reason__subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+.reason__text {
+  font-size: 18px;
+  margin-bottom: 45px;
 }
