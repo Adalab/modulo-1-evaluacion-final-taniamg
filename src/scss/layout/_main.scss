@@ -6,10 +6,10 @@
   padding: 0 15px 60px 15px;
   background-color: $fondo-main;
   font-family: $font-family;
-  text-align: center;
   align-items: center;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
 }
 .reason__container--title {
   font-size: 24px;
@@ -49,6 +49,7 @@
   border-radius: 22px;
   background-color: $main-buttoncolor;
   padding: 10px 29px 0 29px;
+  align-items: center;
 }
 .reason__button--link {
   color: white;
