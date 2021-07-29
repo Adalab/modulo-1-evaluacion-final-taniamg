@@ -62,3 +62,27 @@
   color: $main-buttoncolor;
   transform: scale(0.5);
 }
+@media (min-width: 762px) {
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+  .footer__copy {
+    float: left;
+    order: -2;
+    text-align: left;
+    --text {
+      align-items: left;
+    }
+  }
+  .footer__container--links {
+    order: -1;
+    margin-top: 45px;
+  }
+  .footer__button {
+    order: 1;
+    transform: translateY(-110px);
+    align-items: center;
+  }
+}

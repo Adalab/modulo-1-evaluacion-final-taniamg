@@ -4,31 +4,172 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Evaluación Final Tania</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="">img.header__menu</a></li>
-        </ul>
-      </nav>
-
-      <img src="" alt="header__img" />
+    <header class="header">
+      <div class="header__menu">
+        <img
+          class="header__menu--item"
+          src="./assets/images/ico-menu.svg"
+          alt="menu"
+        />
+      </div>
+      <section class="header__title--container">
+        <h1 class="header__title--main">anonymus proxy</h1>
+        <h2 class="header__title--small">in hac habitasse platea dictumst</h2>
+      </section>
+      <div class="header__button">
+        <a href="#">
+          <img
+            class="header__button--down"
+            src="./assets/images/ico-scroll-down.svg"
+            alt="down"
+          />
+        </a>
+      </div>
     </header>
 
-    <h1>anonymus proxy</h1>
-    <h2>in hac habitasse platea dictums</h2>
-    <div class="header__button"><img src="" alt="header__button--img" /></div>
+    <section class="claim__container">
+      <h2 class="claim__title--2">insomnia tips</h2>
+      <article class="claim__title--conatiner">
+        <h2 class="claim__title">looking throuht a window</h2>
+        <p class="claim__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          veritatis hic molestias, quae delectus maxime cum modi sapiente atque .
+        </p>
+      </article>
 
-    <h2>insomnia tips</h2>
-    <h2>looking throuht a window</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veritatis
-      hic molestias, quae delectus maxime cum modi sapiente atque .
-    </p>
-    <div class="claim__button">go</div>
+      <div class="claim__button">
+        <p class="claim__button--text">go</p>
+      </div>
+    </section>
 
-    cabecera menu fijo claim loocking 3reasons footer
+    <section class="reason__container">
+      <h2 class="reason__container--title">3 reasons to purchase</h2>
+
+      <article class="reason__container--reason--1">
+        <h3 class="reason__subtitle">Ut sed metus</h3>
+        <p class="reason__text">Lorem ipsum dolor sit amet consectetur</p>
+      </article>
+
+      <article class="reason__container--reason--2">
+        <h3 class="reason__subtitle">Curabitur ac erat</h3>
+        <p class="reason__text">Distinctio quasi mollitia hic possimus</p>
+      </article>
+
+      <article class="reason__container--reason--3">
+        <h3 class="reason__subtitle">Morbi dictum</h3>
+        <p class="reason__text">Duam blanditiis at inventore dolorem repudiandae</p>
+      </article>
+
+      <div class="reason__button">
+        <a class="reason__button--link" href="#"> More reasons</a>
+      </div>
+    </section>
+
+    <footer class="footer__container">
+      <div class="footer__button">
+        <a href="./index.html#header">
+          <img
+            class="footer__button--up"
+            src="./assets/images/ico-arrow.svg"
+            alt="down"
+          />
+        </a>
+      </div>
+
+      <nav>
+        <ul class="footer__container--links">
+          <li>
+            <a
+              class="footer__container--links--style"
+              href="https://adalab.es/empresas/"
+              target="_blanket"
+              >articles</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer__container--links--style"
+              href="https://adalab.es/cursos-desarrollo-web/"
+              target="_blank"
+              >books</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer__container--links--style"
+              href="https://adalab.es/calendario-de-la-programadora-2021/"
+              target="_blank"
+              >events</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer__container--links--style"
+              href="https://adalab.es/blog/"
+              target="_blank"
+              >reason</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer__container--links--style"
+              href="https://adalab.es/voluntariado/"
+              target="_blank"
+              >tips</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <ul class="footer__container--socials">
+          <li>
+            <a
+              class="footer__container--socials--style"
+              href="https://twitter.com/Adalab_Digital?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="_blank"
+              >twitter</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer__container--socials--style"
+              href="https://adalab.es/"
+              target="_blank"
+              >instagram</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer__container--socials--style"
+              href="https://adalab.es/"
+              target="_blank"
+              >mastodom.social</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__copy">
+        <p class="footer__copy--text">&copy;2021</p>
+        <p>we <i class="fas fa-heart heart"></i> components</p>
+      </div>
+    </footer>
+
   </body>
 </html>

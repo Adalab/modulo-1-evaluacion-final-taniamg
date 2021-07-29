@@ -11,7 +11,7 @@
   height: auto;
 }
 .claim__title {
-  font-weight: $font-wbold;
+  font-weight: 700;
   font-size: $claim-titlefs;
   text-transform: capitalize;
   line-height: 1.25;
@@ -38,7 +38,7 @@
   border: solid $main-buttoncolor 3px;
   color: $main-buttoncolor;
   text-transform: capitalize;
-  font-weight: $font-wbold;
+  font-weight: 700;
   padding: 10px 25px 0 26px;
 
   &--text {
