@@ -44,3 +44,15 @@
   font-size: 18px;
   margin-bottom: 45px;
 }
+.reason__button {
+  width: 184px;
+  height: 45px;
+  border-radius: 22px;
+  background-color: $main-buttoncolor;
+  padding: 10px 29px 0 29px;
+}
+.reason__button--link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
