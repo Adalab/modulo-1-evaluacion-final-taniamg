@@ -34,7 +34,7 @@
 }
 .reason__button {
   grid-row: 5;
-  grid-column: 2;
+  grid-column: 1/4;
 }
 .reason__button {
   width: 184px;
@@ -85,7 +85,7 @@
     }
     .reason__button {
       grid-row: 3;
-      grid-column: 2;
+      grid-column: 1 / 4;
     }
   }
   .reason__subtitle {
