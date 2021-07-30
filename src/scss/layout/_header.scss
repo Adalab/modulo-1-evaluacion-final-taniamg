@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   font-family: $font-family;
   color: $header-titlebigcolor;
@@ -28,20 +28,24 @@
   }
 }
 .header__title--container {
-  padding: 284px 15px 45px 15px;
+  width: 290px;
+
+  margin: 284px 15px 45px 15px;
 }
 
 .header__title--main {
-  font-size: $header-titlefs;
+  font-size: 50px;
   text-transform: uppercase;
 }
 .header__title--small {
   font-size: $header-textfs;
   padding-top: 10px;
 }
+.header__title--small:first-letter {
+  text-transform: uppercase;
+}
 
 .header__button {
-  display: inline-block;
   width: 45px;
   height: 45px;
   border-radius: 23px;
@@ -51,5 +55,38 @@
     width: 20px;
     height: 11px;
     margin: 17px 12px 15px 12px;
+  }
+}
+@media all and (min-width: 768px) {
+  .header__title--container {
+    width: 690px;
+    margin: 313px 40px 30px;
+  }
+  .header__title--main {
+    font-size: 80px;
+  }
+  .header__title--small {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+  .header__button {
+    margin-bottom: 45px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .header__title--container {
+    width: 730px;
+
+    margin: 241px 275px 30px;
+  }
+  .header__title--main {
+    font-size: 100px;
+  }
+  .header__title--small {
+    font-size: 24px;
+    padding-top: 10px;
+  }
+  .header__button {
+    margin-bottom: 13px;
   }
 }

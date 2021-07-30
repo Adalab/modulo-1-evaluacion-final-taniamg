@@ -21,7 +21,7 @@
     <title>Evaluación Final Tania</title>
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <div class="header__menu">
         <img
           class="header__menu--item"
@@ -34,7 +34,7 @@
         <h2 class="header__title--small">in hac habitasse platea dictumst</h2>
       </section>
       <div class="header__button">
-        <a href="#">
+        <a href="#3reason">
           <img
             class="header__button--down"
             src="./assets/images/ico-scroll-down.svg"
@@ -59,32 +59,34 @@
       </div>
     </section>
 
-    <section class="reason__container">
-      <h2 class="reason__container--title">3 reasons to purchase</h2>
+    <section id="reason" class="reason__container">
+      <h2 id="3reason" class="reason__container--title">3 reasons to purchase</h2>
 
       <article class="reason__container--reason--1">
         <h3 class="reason__subtitle">Ut sed metus</h3>
-        <p class="reason__text">Lorem ipsum dolor sit amet consectetur</p>
+        <p class="reason__text">lorem ipsum dolor sit amet, consectur.</p>
       </article>
 
       <article class="reason__container--reason--2">
         <h3 class="reason__subtitle">Curabitur ac erat</h3>
-        <p class="reason__text">Distinctio quasi mollitia hic possimus</p>
+        <p class="reason__text">mauris mattis urna quis lorem molestie.</p>
       </article>
 
       <article class="reason__container--reason--3">
         <h3 class="reason__subtitle">Morbi dictum</h3>
-        <p class="reason__text">Duam blanditiis at inventore dolorem repudiandae</p>
+        <p class="reason__text">aliquam in dolor el dolor tincidunt.</p>
       </article>
 
       <div class="reason__button">
-        <a class="reason__button--link" href="#"> More reasons</a>
+        <a class="reason__button--link" href="https://adalab.es/" target="_blank">
+          More reasons</a
+        >
       </div>
     </section>
 
     <footer class="footer__container">
       <div class="footer__button">
-        <a href="./index.html#header">
+        <a href="#header">
           <img
             class="footer__button--up"
             src="./assets/images/ico-arrow.svg"
@@ -93,7 +95,9 @@
         </a>
       </div>
 
-      <nav>
+
+    <div class="footer__container--responsive">
+      
         <ul class="footer__container--links">
           <li>
             <a
@@ -167,8 +171,13 @@
       </nav>
       <div class="footer__copy">
         <p class="footer__copy--text">&copy;2021</p>
-        <p>we <i class="fas fa-heart heart"></i> components</p>
+        <p class="footer__copy--heart">
+          we  <i class="fas fa-heart heart"></i> components
+        </p>
       </div>
+    </nav>
+        </div>
+      
     </footer>
 
   </body>

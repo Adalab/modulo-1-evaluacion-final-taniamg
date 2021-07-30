@@ -22,12 +22,18 @@
     height: 30px;
     font-size: $claim-title2fs;
     color: $claim-smalltxtcolor;
+    &:first-letter {
+      text-transform: uppercase;
+    }
   }
 }
 .claim__text {
   margin: 15px 0 30px;
   font-size: $claim-textfs;
   line-height: 1.67;
+  &:first-letter {
+    text-transform: uppercase;
+  }
 }
 .claim__button {
   width: 76px;

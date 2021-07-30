@@ -57,6 +57,9 @@
 .reason__text {
   font-size: $main-articlefs;
   margin-bottom: 45px;
+  &:first-letter {
+    text-transform: uppercase;
+  }
 }
 @media all and (min-width: 768px) {
   .reason__container {
