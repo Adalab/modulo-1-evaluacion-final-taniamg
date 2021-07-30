@@ -1,13 +1,13 @@
 .claim__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: inline-block;
+  width: 100vw;
+  text-align: left;
   padding: 30px 15px 45px;
   font-family: $font-family;
 }
 
 .claim__title--container {
-  width: 290px;
+  width: 100%;
   height: auto;
 }
 .claim__title {
@@ -46,5 +46,10 @@
     width: 25px;
     height: 45px;
     text-align: center;
+  }
+}
+@media all and (min-width: 768px) {
+  .claim__container {
+    padding: 30px 40px 60px;
   }
 }

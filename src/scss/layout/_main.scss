@@ -3,7 +3,7 @@
   height: 100%;
   display: grid;
   text-align: center;
-  padding: 0 15px 60px 15px;
+  padding: 0 15px 30px 15px;
   background-color: $fondo-main;
   font-family: $font-family;
   align-items: center;
@@ -42,7 +42,7 @@
   border-radius: 22px;
   background-color: $main-buttoncolor;
   padding: 10px 29px 0 29px;
-  align-items: center;
+  margin: auto;
 
   &--link {
     color: $header-titlebigcolor;
@@ -57,4 +57,57 @@
 .reason__text {
   font-size: $main-articlefs;
   margin-bottom: 45px;
+}
+@media all and (min-width: 768px) {
+  .reason__container {
+    padding-left: 45px;
+    padding-right: 45px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    &--title {
+      grid-row: 1;
+      grid-column: 1 / 4;
+      font-size: 35px;
+    }
+    &--reason--1 {
+      grid-row: 2;
+      grid-column: 1;
+    }
+    &--reason--2 {
+      grid-row: 2;
+      grid-column: 2;
+    }
+    &--reason--3 {
+      grid-row: 2;
+      grid-column: 3;
+    }
+    .reason__button {
+      grid-row: 3;
+      grid-column: 2;
+    }
+  }
+  .reason__subtitle {
+    font-size: $main-titlefs;
+  }
+  .reason__text {
+    font-size: $claim-buttonfs;
+  }
+}
+@media all and (min-width: 1200px) {
+  .reason__container {
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .reason__title {
+    font-size: 40px;
+  }
+  .reason__subtitle {
+    font-size: 30px;
+  }
+  .reason__text {
+    font-size: 24px;
+  }
 }
