@@ -72,8 +72,8 @@
     display: flex;
     flex-direction: row;
     text-align: left;
-    align-items: baseline;
-    margin-top: -50px;
+    align-items: flex-start;
+    margin: 0 39px 0 39px;
     justify-content: space-between;
   }
   .footer__copy {
@@ -82,14 +82,10 @@
     justify-content: center;
     flex-wrap: nowrap;
     align-items: flex-start;
-
     order: -2;
-    margin-bottom: 141px;
-    margin-left: 45px;
   }
   .footer__container--links {
     order: -1;
-    margin-top: 45px;
   }
 }
 @media all and (min-width: 1200px) {
