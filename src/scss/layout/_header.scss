@@ -5,9 +5,9 @@
   display: flex;
   text-align: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   font-family: $font-family;
   color: $header-titlebigcolor;
@@ -17,6 +17,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     background-color: $menu-iconcolor;
     width: 44px;
     height: 44px;
@@ -27,22 +28,47 @@
     }
   }
 }
-.header__title--container {
+.header__title {
   width: 290px;
+  margin-bottom: 45px;
 
-  margin: 284px 15px 45px 15px;
-}
+  @include tablet {
+    width: 690px;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    width: 730px;
+    margin-bottom: 30px;
+  }
 
-.header__title--main {
-  font-size: 50px;
-  text-transform: uppercase;
-}
-.header__title--small {
-  font-size: $header-textfs;
-  padding-top: 10px;
-}
-.header__title--small:first-letter {
-  text-transform: uppercase;
+  &--main {
+    font-size: 45px;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 80px;
+    }
+    @include desktop {
+      font-size: 100px;
+    }
+  }
+
+  &--small {
+    font-size: $header-textfs;
+    padding-top: 10px;
+
+    @include tablet {
+      font-size: 24px;
+      padding-top: 10px;
+    }
+    @include desktop {
+      font-size: 24px;
+      padding-top: 10px;
+    }
+  }
+  &--small:first-letter {
+    text-transform: uppercase;
+  }
 }
 
 .header__button {
@@ -50,43 +76,19 @@
   height: 45px;
   border-radius: 23px;
   background-color: $header-titlebigcolor;
+  margin-bottom: 53px;
+
+  @include tablet {
+    margin-bottom: 45px;
+  }
+
+  @include desktop {
+    margin-bottom: 13px;
+  }
 
   &--down {
     width: 20px;
     height: 11px;
     margin: 17px 12px 15px 12px;
-  }
-}
-@media all and (min-width: 768px) {
-  .header__title--container {
-    width: 690px;
-    margin: 313px 40px 30px;
-  }
-  .header__title--main {
-    font-size: 80px;
-  }
-  .header__title--small {
-    font-size: 25px;
-    padding-top: 10px;
-  }
-  .header__button {
-    margin-bottom: 45px;
-  }
-}
-@media all and (min-width: 1200px) {
-  .header__title--container {
-    width: 730px;
-
-    margin: 241px 275px 30px;
-  }
-  .header__title--main {
-    font-size: 100px;
-  }
-  .header__title--small {
-    font-size: 24px;
-    padding-top: 10px;
-  }
-  .header__button {
-    margin-bottom: 13px;
   }
 }

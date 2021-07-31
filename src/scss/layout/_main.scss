@@ -1,6 +1,5 @@
 .reason__container {
   width: 100%;
-  height: 100%;
   display: grid;
   justify-content: center;
   text-align: center;
@@ -8,7 +7,7 @@
   padding-bottom: 30px;
   background-color: $fondo-main;
   font-family: $font-family;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
   &--title {
@@ -64,8 +63,8 @@
 @media all and (min-width: 768px) {
   .reason__container {
     justify-content: center;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
     &--title {
       grid-row: 1;

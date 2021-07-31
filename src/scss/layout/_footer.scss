@@ -1,7 +1,7 @@
 .footer__container {
   background-color: $fondo-footer;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer__button {
@@ -90,14 +90,16 @@
 }
 @media all and (min-width: 1200px) {
   .footer__container--responsive {
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 370px;
+    padding-right: 370px;
+    margin: 0;
+    line-height: 30px;
   }
   .footer__container--socials {
     padding: 0;
     margin: 0;
   }
   .footer__container--links {
-    margin: 45px 0 0;
+    margin: 0 30px 45px;
   }
 }
