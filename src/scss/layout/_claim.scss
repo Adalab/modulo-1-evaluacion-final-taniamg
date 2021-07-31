@@ -1,38 +1,62 @@
-.claim__container {
+.claim {
   display: inline-block;
   width: 100%;
   text-align: left;
   padding: 30px 15px 45px;
   font-family: $font-family;
+
+  @include tablet {
+    padding: 30px 39px 60px;
+  }
+
+  @include desktop {
+    padding: 60px 270px 60px;
+  }
 }
 
-.claim__title--container {
+.claim__container--title--tips {
+  width: 300px;
+  height: 30px;
+  font-size: $claim-title2fs;
+  color: $claim-smalltxtcolor;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.claim__container {
   width: 100%;
   height: auto;
-}
-.claim__title {
-  font-weight: 700;
-  font-size: $claim-titlefs;
-  text-transform: capitalize;
-  line-height: 1.25;
-  height: 60px;
 
-  &--2 {
-    width: 300px;
-    height: 30px;
-    font-size: $claim-title2fs;
-    color: $claim-smalltxtcolor;
+  &--title {
+    font-weight: 700;
+    font-size: $claim-titlefs;
+    text-transform: capitalize;
+    line-height: 30px;
+    height: 60px;
+
+    @include tablet {
+      font-size: 26px;
+      line-height: 45px;
+    }
+    @include desktop {
+      font-size: 32px;
+      line-height: 45px;
+    }
+  }
+
+  &--title--text {
+    margin: 15px 0 30px;
+    font-size: $claim-textfs;
+    line-height: 1.67;
     &:first-letter {
       text-transform: uppercase;
     }
-  }
-}
-.claim__text {
-  margin: 15px 0 30px;
-  font-size: $claim-textfs;
-  line-height: 1.67;
-  &:first-letter {
-    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 .claim__button {
@@ -45,33 +69,25 @@
   font-weight: 700;
   padding: 10px 25px 0 26px;
 
-  &--text {
-    display: flex;
-    width: 25px;
-    height: 45px;
-  }
-}
-@media all and (min-width: 768px) {
-  .claim__container {
-    padding: 30px 39px 60px;
-  }
-  .claim__button {
+  @include tablet {
     width: 90px;
     height: 45px;
     border-radius: 23px;
     padding: 6px 25px 0 26px;
     font-size: 23px;
   }
-}
-@media all and (min-width: 1200px) {
-  .claim__container {
-    padding: 60px 270px 60px;
-  }
-  .claim__button {
+
+  @include desktop {
     width: 160px;
     height: 45px;
     border-radius: 23px;
-    padding-left: 58px;
+    padding: 5px 59px 0;
     font-size: 23px;
+  }
+
+  &--text {
+    display: flex;
+    width: 25px;
+    height: 45px;
   }
 }
