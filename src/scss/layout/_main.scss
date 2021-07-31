@@ -10,6 +10,16 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 27px;
+  }
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
   &--title {
     font-size: $main-titlefs;
     font-weight: 700;
@@ -17,23 +27,75 @@
     justify-content: center;
     grid-row: 1;
     grid-column: 1/4;
+
+    @include tablet {
+      grid-row: 1;
+      grid-column: 1 / 4;
+      font-size: 35px;
+    }
+
+    @include desktop {
+      grid-row: 1;
+      grid-column: 1 / 4;
+      font-size: 40px;
+    }
   }
   &--reason--1 {
     grid-row: 2;
     grid-column: 2;
+
+    @include tablet {
+      grid-row: 2;
+      grid-column: 1;
+    }
+
+    @include desktop {
+      grid-row: 2;
+      grid-column: 1;
+    }
   }
   &--reason--2 {
     grid-row: 3;
     grid-column: 2;
+
+    @include tablet {
+      grid-row: 2;
+      grid-column: 2;
+    }
+
+    @include desktop {
+      grid-row: 2;
+      grid-column: 2;
+    }
   }
   &--reason--3 {
     grid-row: 4;
     grid-column: 2;
+
+    @include tablet {
+      grid-row: 2;
+      grid-column: 3;
+    }
+
+    @include desktop {
+      grid-row: 2;
+      grid-column: 3;
+    }
   }
 }
 .reason__button {
   grid-row: 5;
   grid-column: 1/4;
+
+  @include tablet {
+    grid-row: 3;
+    grid-column: 1 / 4;
+  }
+
+  @include desktop {
+    grid-row: 3;
+    grid-column: 1 / 4;
+  }
 }
 .reason__button {
   width: 184px;
@@ -61,6 +123,14 @@
 .reason__subtitle {
   font-size: $main-articlefs;
   font-weight: $main-articlefs;
+
+  @include tablet {
+    font-size: $main-titlefs;
+  }
+
+  @include desktop {
+    font-size: 30px;
+  }
 }
 .reason__text {
   font-size: $main-articlefs;
@@ -68,77 +138,11 @@
   &:first-letter {
     text-transform: uppercase;
   }
-}
-@media all and (min-width: 768px) {
-  .reason__container {
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
-    &--title {
-      grid-row: 1;
-      grid-column: 1 / 4;
-      font-size: 35px;
-    }
-    &--reason--1 {
-      grid-row: 2;
-      grid-column: 1;
-    }
-    &--reason--2 {
-      grid-row: 2;
-      grid-column: 2;
-    }
-    &--reason--3 {
-      grid-row: 2;
-      grid-column: 3;
-    }
-    .reason__button {
-      grid-row: 3;
-      grid-column: 1 / 4;
-    }
-  }
-  .reason__subtitle {
-    font-size: $main-titlefs;
-  }
-  .reason__text {
+  @include tablet {
     font-size: $claim-buttonfs;
   }
-}
-@media all and (min-width: 1200px) {
-  .reason__container {
-    align-items: center;
-    grid-template-columns: 400px 30px 300px 30px 400px;
-    grid-template-rows: 1fr 1fr 1fr;
-    &--title {
-      grid-row: 1;
-      grid-column: 1 / 6;
-      font-size: 35px;
-    }
-    &--reason--1 {
-      grid-row: 2;
-      grid-column: 1;
-    }
-    &--reason--2 {
-      grid-row: 2;
-      grid-column: 3;
-    }
-    &--reason--3 {
-      grid-row: 2;
-      grid-column: 5;
-    }
-    .reason__button {
-      top: 0;
-      grid-row: 3;
-      grid-column: 1 / 6;
-    }
-  }
-  .reason__title {
-    font-size: 40px;
-  }
-  .reason__subtitle {
-    font-size: 30px;
-  }
-  .reason__text {
+
+  @include desktop {
     font-size: 24px;
   }
 }
