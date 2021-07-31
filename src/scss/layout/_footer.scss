@@ -11,10 +11,12 @@
   background-color: $header-titlebigcolor;
   transform: translateY(-25px);
   margin: auto;
+
   &--up {
     margin: 10px 12px 10px 12px;
   }
 }
+
 .footer__container--responsive {
   display: flex;
   flex-direction: column;

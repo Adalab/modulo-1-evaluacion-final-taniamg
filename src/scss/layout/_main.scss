@@ -97,6 +97,7 @@
     grid-column: 1 / 4;
   }
 }
+
 .reason__button {
   width: 184px;
   height: 45px;
@@ -104,6 +105,7 @@
   background-color: $main-buttoncolor;
   padding: 0 20px 0 20px;
   margin: auto;
+  transition: all 0.2s ease-in-out;
 
   @include tablet {
     width: 210px;
@@ -120,6 +122,13 @@
     line-height: 45px;
   }
 }
+
+.reason__button:hover {
+  transform: scale(1.1);
+  transition-property: background-color;
+  background-color: blue;
+}
+
 .reason__subtitle {
   font-size: $main-articlefs;
   font-weight: $main-articlefs;
