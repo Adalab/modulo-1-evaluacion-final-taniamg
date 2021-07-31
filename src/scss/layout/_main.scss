@@ -40,13 +40,22 @@
   height: 45px;
   border-radius: 22px;
   background-color: $main-buttoncolor;
-  padding: 10px 29px 0 29px;
+  padding: 0 20px 0 20px;
   margin: auto;
+
+  @include tablet {
+    width: 210px;
+  }
+
+  @include desktop {
+    width: 255px;
+  }
 
   &--link {
     color: $header-titlebigcolor;
     text-decoration: none;
     font-size: $main-buttonfs;
+    line-height: 45px;
   }
 }
 .reason__subtitle {
