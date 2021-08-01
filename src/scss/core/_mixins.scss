@@ -10,3 +10,230 @@
     @content;
   }
 }
+
+@mixin text-style-h1-desktop() {
+  font-family: $font-family-title;
+  font-size: 100px;
+  font-weight: $font-weight-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-white;
+}
+
+@mixin text-style-h2-desktop() {
+  font-family: $font-family-title;
+  font-size: 32px;
+  font-weight: $font-weight-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  color: $color-black;
+}
+@mixin text-style-h2-tablet() {
+  font-family: $font-family-title;
+  font-size: 26px;
+  font-weight: $font-weight-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: normal;
+  color: $color-black;
+}
+
+@mixin text-style() {
+  font-family: $font-family-title;
+  font-size: 42px;
+  font-weight: $font-weight-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-white;
+}
+
+@mixin text-style-2() {
+  font-family: $font-family-title;
+  font-size: 24px;
+  font-weight: $font-weight-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-black;
+}
+@mixin text-style-3() {
+  font-family: ZapfDingbatsITC;
+  font-size: 14px;
+  font-weight: $font-weight-regular;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-orange;
+}
+
+@mixin text-style-4() {
+  font-family: $font-family-regular;
+  font-size: 14px;
+  font-weight: $font-weight-regular;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  color: $color-light-blue;
+}
+
+@mixin text-style-5() {
+  font-family: $font-family-regular;
+  font-size: 16px;
+  font-weight: $font-weight-regular;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-white;
+}
+
+@mixin text-style-6() {
+  font-family: $font-family-regular;
+  font-size: 16px;
+  font-weight: $font-weight-regular;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  color: $color-white;
+}
+
+@mixin text-style-7() {
+  font-family: $font-family-title;
+  font-size: 18px;
+  font-weight: $font-weight-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-black;
+}
+
+@mixin text-style-8() {
+  font-family: $font-family-title;
+  font-size: 80px;
+  font-weight: $font-weight-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-white;
+}
+
+@mixin text-style-9() {
+  font-family: $font-family-regular;
+  font-size: 20px;
+  font-weight: $font-weight-medium;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-orange;
+}
+@mixin text-style-10() {
+  font-family: $font-family-regular;
+  font-size: 18px;
+  font-weight: $font-weight-regular;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-black;
+}
+@mixin text-style-11() {
+  font-family: $font-family-title;
+  font-size: 24px;
+  font-weight: $font-weight-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: $color-black;
+}
+
+@mixin text-style-text-tablet() {
+  font-family: $font-family-regular;
+  font-size: 20px;
+  font-weight: $font-weight-regular;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: $color-grey-brown;
+}
+
+@mixin text-style-text-mobile() {
+  font-family: $font-family-regular;
+  font-size: 18px;
+  font-weight: $font-weight-regular;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: $color-grey-brown;
+}
+
+@mixin text-style-main-text-tablet() {
+  font-family: $font-family-regular;
+  font-size: 24px;
+  font-weight: $font-weight-regular;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-white;
+}
+
+@mixin text-style-b1() {
+  font-family: $font-family-regular;
+  font-size: 20px;
+  font-weight: $font-weight-medium;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-white;
+}
+
+@mixin text-style-category-desktop() {
+  font-family: $font-family-regular;
+  font-size: 16px;
+  font-weight: $font-weight-regular;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  color: $color-light-blue;
+}
+
+@mixin text-style-footer() {
+  font-family: $font-family-regular;
+  font-size: 14px;
+  font-weight: $font-weight-regular;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  color: $color-white;
+}
