@@ -5,8 +5,8 @@
   text-align: center;
   align-items: center;
   padding-bottom: 30px;
-  background-color: $fondo-main;
-  font-family: $font-family;
+  background-color: $color-background;
+  font-family: $font-family-regular;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
 
@@ -14,15 +14,20 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 27px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   @include desktop {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   &--title {
-    font-size: $claim-titlefs;
-    font-weight: 700;
+    font-family: $font-family-title;
+    font-size: $font-size-title;
+    font-weight: $font-weight-bold;
     text-transform: capitalize;
     justify-content: center;
     grid-row: 1;
@@ -102,7 +107,7 @@
   width: 184px;
   height: 45px;
   border-radius: 22px;
-  background-color: $main-buttoncolor;
+  background-color: $color-orange;
   padding: 0 20px 0 20px;
   margin: auto;
   transition: all 0.2s ease-in-out;
@@ -116,9 +121,9 @@
   }
 
   &--link {
-    color: $header-titlebigcolor;
+    color: $color-white;
     text-decoration: none;
-    font-size: $claim-buttonfs;
+    font-size: $font-size-button;
     line-height: 45px;
   }
 }
@@ -130,28 +135,28 @@
 }
 
 .reason__subtitle {
-  font-size: $claim-textfs;
-  font-weight: $claim-textfs;
+  font-family: $font-family-title;
+  font-size: $font-size-text;
 
   @include tablet {
-    font-size: $claim-titlefs;
+    font-size: $font-size-title;
   }
 
   @include desktop {
-    font-size: $claim-titlefs;
+    font-size: $font-size-title;
   }
 }
 .reason__text {
-  font-size: $claim-textfs;
+  font-size: $font-size-title;
   margin-bottom: 45px;
   &:first-letter {
     text-transform: uppercase;
   }
   @include tablet {
-    font-size: $claim-buttonfs;
+    font-size: $font-size-button;
   }
 
   @include desktop {
-    font-size: $claim-titlefs;
+    font-size: $font-size-title;
   }
 }

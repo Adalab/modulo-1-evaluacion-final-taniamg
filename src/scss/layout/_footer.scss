@@ -1,5 +1,5 @@
 .footer__container {
-  background-color: $fondo-footer;
+  background-color: $color-background-footer;
   height: 100%;
   width: 100%;
 }
@@ -8,7 +8,7 @@
   width: 45px;
   height: 45px;
   border-radius: 22px;
-  background-color: $header-titlebigcolor;
+  background-color: $color-white;
   margin: auto;
 
   &--up {
@@ -38,20 +38,20 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: $header-titlebigcolor;
+  color: $color-white;
   line-height: 30px;
 }
 
 .footer__container--links {
   margin: 0 123px 30px 123px;
-  font-family: $font-family;
-  color: $header-titlebigcolor;
+  font-family: $font-family-regular;
+  color: $color-white;
   list-style-type: none;
 
   &--style {
     text-decoration: none;
-    color: $header-titlebigcolor;
-    font-size: $header-textfs;
+    font-size: $font-size-regular;
+    color: $color-white;
     text-transform: uppercase;
   }
 }
@@ -59,19 +59,19 @@
 .footer__container--socials {
   margin: 0 90px 30px 90px;
   list-style-type: none;
-  font-family: $font-family;
+  font-family: $font-family-regular;
 
   &--style {
     text-decoration: none;
-    color: $header-titlebigcolor;
-    font-size: $header-textfs;
+    color: $color-white;
+    font-size: $font-size-regular;
     text-transform: uppercase;
   }
 }
 .footer__copy {
   margin-bottom: 45px;
-  font-size: $claim-title2fs;
-  font-family: $font-family;
+  font-family: $font-family-regular;
+  font-size: $font-size-small;
 
   &--text {
     display: flex;
@@ -80,7 +80,7 @@
 }
 
 .heart {
-  color: $main-buttoncolor;
+  color: $color-orange;
   transform: scale(0.5);
 }
 

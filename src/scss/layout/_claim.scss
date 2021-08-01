@@ -2,8 +2,8 @@
   display: inline-block;
   width: 100%;
   text-align: left;
+  font-family: $font-family-regular;
   padding: 30px 15px 45px;
-  font-family: $font-family;
 
   @include tablet {
     padding: 30px 39px 60px;
@@ -17,8 +17,9 @@
 .claim__container--title--tips {
   width: 300px;
   height: 30px;
-  font-size: $claim-title2fs;
-  color: $claim-smalltxtcolor;
+  font-size: $font-size-small;
+  color: $color-light-blue;
+
   &:first-letter {
     text-transform: uppercase;
   }
@@ -29,16 +30,18 @@
   height: auto;
 
   &--title {
-    font-weight: 700;
-    font-size: $claim-titlefs;
+    font-family: $font-family-title;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-title;
     text-transform: capitalize;
-    line-height: 30px;
+    line-height: 60px;
     height: 60px;
 
     @include tablet {
       font-size: 26px;
       line-height: 45px;
     }
+
     @include desktop {
       font-size: 32px;
       line-height: 45px;
@@ -47,8 +50,10 @@
 
   &--title--text {
     margin: 15px 0 30px;
-    font-size: $claim-textfs;
+    font-size: $font-size-text;
     line-height: 1.67;
+    color: $color-grey-brown;
+
     &:first-letter {
       text-transform: uppercase;
     }
@@ -63,10 +68,10 @@
   width: 76px;
   height: 45px;
   border-radius: 23px;
-  border: solid $main-buttoncolor 3px;
-  color: $main-buttoncolor;
+  border: solid $color-orange 3px;
+  color: $color-orange;
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: $font-weight-medium;
   padding: 10px 25px 0 26px;
   transition: all 0.2s ease-in-out;
 

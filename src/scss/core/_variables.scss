@@ -1,21 +1,26 @@
-// fonts
-$font-family: "Roboto Slab", serif;
+/*font-families*/
+$font-family-regular: "Roboto", sans-serif;
+$font-family-title: "Roboto Slab", serif;
 
-$font-wregular: 400;
-$font-wmedium: 500;
-$main-articlefs: 700;
-$header-titlefs: 42px;
-$header-textfs: 16px;
-$claim-title2fs: 14px;
-$claim-titlefs: 24px;
-$claim-textfs: 18px;
-$claim-buttonfs: 20px;
+/*font-weights-*/
+$font-weight-bold: 700;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
 
-$menu-iconcolor: #0271bc;
-$header-titlebigcolor: #ffffff;
-$claim-smalltxtcolor: #8ccbea;
-$contentcolor: #000000;
-$main-buttoncolor: #f26002;
-$fondo-claim: #ffffff;
-$fondo-main: #eff9ff;
-$fondo-footer: #304268;
+/*font-sizes*/
+$font-size-big: 42px;
+$font-size-button: 20px;
+$font-size-regular: 16px;
+$font-size-small: 14px;
+$font-size-text: 18px;
+$font-size-title: 24px;
+
+/*colors*/
+$color-background: #eff9ff;
+$color-background-footer: #304268;
+$color-black: #000000;
+$color-blue: #0271bc;
+$color-grey-brown: #4a4a4a;
+$color-light-blue: #8ccbea;
+$color-orange: #f26002;
+$color-white: #ffffff;
