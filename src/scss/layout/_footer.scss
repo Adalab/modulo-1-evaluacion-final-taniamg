@@ -51,7 +51,7 @@
   &--style {
     text-decoration: none;
     color: $header-titlebigcolor;
-    font-size: $footer-linksfs;
+    font-size: $header-textfs;
     text-transform: uppercase;
   }
 }
@@ -64,7 +64,7 @@
   &--style {
     text-decoration: none;
     color: $header-titlebigcolor;
-    font-size: $footer-socialsfs;
+    font-size: $header-textfs;
     text-transform: uppercase;
   }
 }

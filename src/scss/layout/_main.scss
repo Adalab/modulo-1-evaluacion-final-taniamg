@@ -7,8 +7,8 @@
   padding-bottom: 30px;
   background-color: $fondo-main;
   font-family: $font-family;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 
   @include tablet {
     grid-template-columns: repeat(3, 1fr);
@@ -21,7 +21,7 @@
   }
 
   &--title {
-    font-size: $main-titlefs;
+    font-size: $claim-titlefs;
     font-weight: 700;
     text-transform: capitalize;
     justify-content: center;
@@ -118,7 +118,7 @@
   &--link {
     color: $header-titlebigcolor;
     text-decoration: none;
-    font-size: $main-buttonfs;
+    font-size: $claim-buttonfs;
     line-height: 45px;
   }
 }
@@ -130,19 +130,19 @@
 }
 
 .reason__subtitle {
-  font-size: $main-articlefs;
-  font-weight: $main-articlefs;
+  font-size: $claim-textfs;
+  font-weight: $claim-textfs;
 
   @include tablet {
-    font-size: $main-titlefs;
+    font-size: $claim-titlefs;
   }
 
   @include desktop {
-    font-size: 30px;
+    font-size: $claim-titlefs;
   }
 }
 .reason__text {
-  font-size: $main-articlefs;
+  font-size: $claim-textfs;
   margin-bottom: 45px;
   &:first-letter {
     text-transform: uppercase;
@@ -152,6 +152,6 @@
   }
 
   @include desktop {
-    font-size: 24px;
+    font-size: $claim-titlefs;
   }
 }
