@@ -1,0 +1,21 @@
+.special__offer--main {
+  width: 100%;
+  height: 100%;
+  background-color: $color-orange;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  @media all and (max-width: 768px) {
+    display: none;
+  }
+}
+.special__offer--main--title {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.special__offer--main--subtitle {
+  display: flex;
+  justify-content: left;
+}
